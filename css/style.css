@@ -601,6 +601,7 @@ img {
 .container-footer-contact {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 /*_________ AND FOOTER_________*/
 
@@ -992,6 +993,10 @@ img {
 
 /*__________FOOTER FORM__________*/
 
+.footer-form-wrapper{
+  display: flex;
+}
+
 .footer-form-title{
   margin: 0;
   margin-bottom: 20px;
@@ -1016,7 +1021,13 @@ img {
   color: var(--hover-focus-text-color);
 }
 
+.btn-flex-wrapper{
+  display: flex;
+  align-items: center;
+}
+
 .footer-form-btn{
+  padding: 10px 29px;
   width: 200px;
   height: 50px;
   left: 1185px;
@@ -1025,8 +1036,16 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.footer-form-btn:hover,
+.footer-form-btn:focus{
+  background-color: #188CE8;
+}
+
 .footer-form-icon{
+  margin-left: 10px;
   width: 24px;
   height: 24px;
 
@@ -1034,12 +1053,11 @@ img {
 
 .btn-text-footer{
   font-family: Roboto;
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 30px;
-letter-spacing: 0.06em;
-color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: var(--hover-focus-text-color);
 
 
 }
